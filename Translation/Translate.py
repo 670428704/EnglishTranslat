@@ -62,7 +62,7 @@ class Dict:
 
 if __name__ == '__main__':
     dic = Dict()
-    resp = dic.translate("publication")
+    resp = dic.translate("naive")
     print(resp)
 
 

@@ -73,10 +73,11 @@ def parseLocal(pdfPath):
                     results = re.sub(r'[^A-Za-z]', ' ', results)
                     print("results:(%s/%s):%s " % (count, pageCount,results) )
 
-                    with open(outPath, 'a+',newline ="") as f:
-                        csv_write = csv.writer(f)
-                        data_row = [count,pageCount,str(results) ]
-                        csv_write.writerow(data_row)
+
+                    # with open(outPath, 'a+',newline ="") as f:
+                    #     csv_write = csv.writer(f)
+                    #     data_row = [count,pageCount,str(results) ]
+                    #     csv_write.writerow(data_row)
 
 
 
