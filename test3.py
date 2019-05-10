@@ -7,10 +7,13 @@ import csv
 def CsvProcess(csvPath):
     dataArray = pd.read_csv(csvPath)
     dataArray = np.array(dataArray)
+    pageTotal = dataArray[len(dataArray)-1][1]
+    print(pageTotal)
+
     dataList=[]
     for i in range(0,len(dataArray) ):
-        
-        print(dataArray[0])
+        df1 = dataArray[i]
+
 
 
 
