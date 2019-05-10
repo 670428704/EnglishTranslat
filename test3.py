@@ -5,14 +5,23 @@ import csv
 
 
 def CsvProcess(csvPath):
+    outPath = csvPath.replace("./CFApdf","./outPath")
+    fil = open(outPath,"w")
+    fil.close()
+
     dataArray = pd.read_csv(csvPath)
     dataArray = np.array(dataArray)
     pageTotal = dataArray[len(dataArray)-1][1]
     print(pageTotal)
 
     dataList=[]
+    currentPage = [0]
     for i in range(0,len(dataArray) ):
         df1 = dataArray[i]
+        if df1[1] != currentPage:
+            ...
+        if df1[1] == currentPage:
+            ...
 
 
 
