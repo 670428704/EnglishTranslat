@@ -1,4 +1,4 @@
-
+﻿
 
 # -*- coding: UTF-8 -*-
 import hashlib
@@ -55,3 +55,4 @@ resp = dic.translate("publication")
 print(resp)
 # print(resp['translateResult'][0][0]['tgt'])
 # print(resp['smartResult']['entries'][1])
+
